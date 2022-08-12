@@ -18,7 +18,7 @@ public class Runner2 {
         List<String> lines = Files.readAllLines(fileToRead);
         System.out.println(lines);
 
-        // Return a stream of each of the line & process them one by one, thus it is much more efficient & comes less memory.
+        // Return a stream of each of the line & process them one by one, thus it is much more efficient & consumes less memory.
         Files.lines(fileToRead).forEach(System.out::println);
 
         // Converts each line of the file to lowercase & then return the line which contains "a"
